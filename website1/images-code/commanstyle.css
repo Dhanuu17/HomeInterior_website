@@ -1,0 +1,626 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: hwb(0 0% 95%);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d1616; /* Updated to match header background */
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 50px; /* Adjusted to match logo size consistency */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f5faff;
+}
+
+/* Home Section */
+.home {
+    background-image: url('BACKGROUND.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero {
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #761829;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #e6e9ec;
+}
+
+/* Featured Services Section */
+.featured-services, .services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f9fa; /* Common background for both sections */
+}
+
+.featured-services h2, .services h1 {
+    margin-bottom: 40px;
+    font-size: 2.5rem; /* Unified font size */
+    color: #333;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px; /* Unified border-radius */
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service-item h3, .service-item h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5rem; /* Unified font size */
+    color: #333;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: #f8f9fa;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    width: 45%;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #120d0d;
+}
+
+/* Footer */
+footer {
+    background-color: #1c1111;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo img {
+    height: 50px; /* Adjusted for consistency */
+    margin-bottom: 20px;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    margin: 0 20px;
+    padding: 10px;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #007bff;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin: 10px 0;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 90%;
+    }
+}
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333; /* Adjust text color as needed */
+    background-color: #f8f9fa; /* Adjust background color as needed */
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: #1d1616;
+    border-bottom: 1px solid #140f0f;
+    color: #fff; /* Adjust text color as needed */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 40px; /* Adjust logo height as needed */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ddd; /* Adjust link color as needed */
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f5faff; /* Adjust hover color as needed */
+}
+
+/* About Section Styles */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem; /* Adjust heading size as needed */
+}
+
+.about p {
+    font-size: 1.1rem; /* Adjust paragraph font size as needed */
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1c1111;
+    color: #fff; /* Adjust text color as needed */
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    height: 40px; /* Adjust logo height as needed */
+}
+
+.footer-sections {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    margin: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem; /* Adjust heading size as needed */
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #bbb; /* Adjust link color as needed */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #007bff; /* Adjust hover color as needed */
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #bbb; /* Adjust social link color as needed */
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #007bff; /* Adjust hover color as needed */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem; /* Adjust footer text size as needed */
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark text color */
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #1d1616; /* Dark background for header */
+    color: #fff; /* White text color */
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo img {
+    height: 40px; /* Adjust logo height */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #fff; /* White background */
+    padding: 60px 0;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f0f0f0; /* Light gray form background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: calc(100% - 20px); /* Adjust width for input fields */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+    min-height: 150px; /* Minimum height for textarea */
+}
+
+form button {
+    background-color: #761829; /* Dark red button color */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #5e1224; /* Darken button color on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1c1111; /* Dark background for footer */
+    color: #fff; /* White text color */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    height: 40px; /* Adjust logo height */
+    margin-bottom: 20px;
+}
+
+.footer-sections {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    margin: 0 20px;
+    padding: 10px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+}
+
+.footer-social img {
+    width: 30px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    form {
+        padding: 20px 10px;
+    }
+}
+.contact {
+    background-image: url('BACKGROUND.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0; /* Adjust padding as needed */
+    text-align: center;
+    color: #ebe3e3; /* Adjust text color for readability */
+}
